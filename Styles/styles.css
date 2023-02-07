@@ -3,3 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.gap {
+    height: 100px;
+}
+
+.text-box {
+    width: 50%;
+    height: 250px;
+    font-size: 30px;
+    /* font-family: 'Covered By Your Grace', cursive; */
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #664314;
+}
+
+.main-container {
+    width: 100%;
+    height: 575px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1553913861-c0fddf2619ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-container-1 {
+    width: 100%;
+    height: 575px;
+    background-color: #dcba85;
+}

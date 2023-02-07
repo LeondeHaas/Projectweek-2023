@@ -2,9 +2,8 @@
 .header {
   width: 100%;
   height: 100px;
-  background-color: wheat;
+  background-color: #c8a56b;
   position: fixed;
-  backdrop-filter: blur(10px);
 }
 
 .header {
@@ -15,7 +14,7 @@
     list-style: none;
     gap: 20px;
 } a {
-    color: brown;
+    color: #664314;
     font-family: 'Prompt', sans-serif;
     text-decoration: none;
     transition: 65ms;
