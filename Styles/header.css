@@ -1,0 +1,26 @@
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: wheat;
+  position: fixed;
+  backdrop-filter: blur(10px);
+}
+
+.header {
+  justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+} a {
+    color: brown;
+    font-family: 'Prompt', sans-serif;
+    text-decoration: none;
+    transition: 65ms;
+    font-weight: bold;
+    letter-spacing: 2px;
+}a:hover {
+  font-size: 20px;
+}
