@@ -34,7 +34,7 @@ a {
 }
 
 .navbar.sticky {
-  background: #dcba85;
+  background: #191300;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -45,7 +45,7 @@ a {
 }
 
 .navbar .logo a {
-  color: #000;
+  color: #fff;
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
@@ -60,7 +60,7 @@ a {
 }
 
 .menu-list li a {
-  color: #000;
+  color: #fff;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;

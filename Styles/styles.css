@@ -8,17 +8,45 @@
     height: 100px;
 }
 
+.color {
+    color: #daa520;
+    text-decoration: underline 2px;
+    text-underline-offset: 15px;
+}
+
 .text-box {
-    width: 50%;
-    height: 250px;
+    width: 100%;
+    height: auto;
     font-size: 30px;
     /* font-family: 'Covered By Your Grace', cursive; */
     font-family: 'Prompt', sans-serif;
-    text-align: center;
-    justify-content: center;
-    display: flex;
+    text-align: left;
+    /* justify-content: center; */
+    display: flex-start;
     align-items: center;
-    color: #000;
+    color: #fff;
+    flex-direction: column;
+    background-color: #19130081;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border: 4px solid #daa520;
+    transition: 0.45s;
+    color: #daa520;
+    font-family: 'Prompt', sans-serif;
+    background-color: #00000000;
+}
+
+button:hover {
+    background-color: black;
+    color: #fff;
+     transition: 0.45s;
 }
 
 .main-container {
@@ -38,7 +66,7 @@
     width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #dcba85;
+    background-color: #191300;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -50,7 +78,7 @@
 .section-container-wrapper-1 {
     width: 80%;
     height: auto;
-    background-color: #dcba85;
+    background-color: #191300;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -59,7 +87,7 @@
     padding-right: 20px;
     border-radius: 20px;
     padding-top: 50px;
-    box-shadow: 0px 0px 3px 3px;
+    color: #fff;
 }
 
 h2 {
@@ -71,7 +99,6 @@ h2 {
 p {
     padding-top: 50px;
     font-size: 20px;
-    text-align: center;
     padding-bottom: 50px;
     font-family: 'Prompt', sans-serif;
 }
