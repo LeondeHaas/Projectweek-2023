@@ -1,0 +1,21 @@
+@Media (max-width:900px) {
+    .text-box {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@Media (max-width:455px) {
+    .text-box {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+      h1 {
+        font-size: 25px;
+    }
+}

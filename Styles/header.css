@@ -31,6 +31,8 @@ a {
   z-index: 2;
   padding: 25px 0;
   transition: all 0.3s ease;
+  background: #191300;
+  border-bottom: 4px solid #daa520;
 }
 
 .navbar.sticky {
@@ -178,9 +180,9 @@ a {
 }
 
 .fa-bars:before {
-  color: #000;
+  color: #fff;
 }
 
 .fa-times:before {
-  color: #000;
+  color: #fff;
 }
