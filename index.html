@@ -50,6 +50,21 @@ ROC Nijmegen - Heyedaalseweg</p>
             <button class="sign-up">Sign up</button>
             <button class="register">Register</button>
         </div>
+
+        <div id="container">
+            <span id="text1"></span>
+            <span id="text2"></span>
+        </div>               
+      
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                        0 1 0 0 0
+                                        0 0 1 0 0
+                                        0 0 0 255 -140" />
+            </filter>
+        </defs>
+
     </div>
     <div class="section-container-1">
         <div class="section-container-wrapper-1">
