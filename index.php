@@ -31,6 +31,7 @@
                     <li><a href="#section-1" id="locate1">Intro</a></li>
                     <li><a href="#section-2" id="locate2">About</a></li>
                     <li><a href="#section-3" id="locate3">Register</a></li>
+                    <li><a href="#section-4" id="locate3">Sign-up</a></li>
                 </ul>
                 <div class="icon menu-btn">
                     <i class="fas fa-bars"></i>
@@ -51,7 +52,7 @@ ROC Nijmegen - Heyedaalseweg</p>
             <button class="register">Register</button>
         </div>
 
-        <div id="container">
+ <div id="container">
             <span id="text1"></span>
             <span id="text2"></span>
         </div>               
