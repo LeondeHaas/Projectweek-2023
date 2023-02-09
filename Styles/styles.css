@@ -135,10 +135,15 @@ p {
     font-family: 'Covered By Your Grace', cursive;
 }
 
-/* @font-face {
+@font-face {
     font-family: 'Ketupat Ramadhan';
     src: url('fonts/KetupatRamadhanRegular.ttf');
-} */
+}
+
+@font-face {
+    font-family: 'Covered By Your Grace', cursive;
+    src: url('fonts/Julee-Regular.ttf');
+}
 
 
 
