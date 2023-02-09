@@ -1,83 +1,112 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .gap {
-  height: 100px;
+    height: 70px;
 }
 
 .color {
-  color: #daa520;
-  text-decoration: underline 2px;
-  text-underline-offset: 15px;
+    color: rgba(213,171,73,255);
+    /* text-decoration: underline 2px;
+    text-underline-offset: 15px; */
 }
 
 .text-box {
-  width: 50%;
-  height: 250px;
-  font-size: 30px;
-  /* font-family: 'Covered By Your Grace', cursive; */
-  font-family: "Prompt", sans-serif;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  color: #000;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    /* font-family: 'Covered By Your Grace', cursive; */
+    font-family: 'Ketupat Ramadhan';
+    text-align: left;
+    /* justify-content: center; */
+    display: flex-start;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    background-color: #37546181;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border: 4px solid rgba(213,171,73,255);
+    transition: 0.45s;
+    color: rgba(213,171,73,255);
+    font-family: 'Ketupat Ramadhan';
+    background-color: #00000000;
+}
+
+button:hover {
+    background-color: black;
+    color: #fff;
+     transition: 0.45s;
 }
 
 .main-container {
-  width: 100%;
-  height: 850px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  background-image: url(https://rare-gallery.com/uploads/posts/567915-pyramid-egypt.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-image: url(https://rare-gallery.com/uploads/posts/567915-pyramid-egypt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .section-container-1 {
-  height: auto;
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #dcba85;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-image: url(https://previews.123rf.com/images/photoauris/photoauris1506/photoauris150600005/41077307-yellow-brick-wall-texture.jpg); */
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgba(23,60,73,255);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(https://previews.123rf.com/images/photoauris/photoauris1506/photoauris150600005/41077307-yellow-brick-wall-texture.jpg); */
 }
 
 .section-container-wrapper-1 {
-  width: 80%;
-  height: auto;
-  background-color: #dcba85;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 20px;
-  padding-top: 50px;
-  box-shadow: 0px 0px 3px 3px;
+    width: 80%;
+    height: auto;
+    background-color: rgba(168,49,26,255);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    color: #fff;
+    box-shadow: 15px 15px rgba(213,171,73,255);
 }
 
 h2 {
-  padding-bottom: 50px;
-  font-size: 30px;
-  font-family: "Prompt", sans-serif;
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-family: 'Ketupat Ramadhan';
 }
 
 p {
-  padding-top: 50px;
-  font-size: 20px;
-  text-align: center;
-  padding-bottom: 50px;
-  font-family: "Prompt", sans-serif;
+    padding-top: 50px;
+    font-size: 20px;
+    padding-bottom: 50px;
+    font-family: 'Ketupat Ramadhan';
 }
+
+/* @font-face {
+    font-family: 'Ketupat Ramadhan';
+    src: url('fonts/KetupatRamadhanRegular.ttf');
+} */
+
+
+
