@@ -24,27 +24,50 @@
     /* justify-content: center; */
     display: flex-start;
     align-items: center;
-    color: #fff;
+    color: rgba(23,60,73,255);
     flex-direction: column;
     background-color: #37546181;
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 1px;
 }
 
-button {
+.sign-up {
     width: 200px;
-    height: 50px;
-    border: 4px solid rgba(213,171,73,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
     transition: 0.45s;
-    color: rgba(213,171,73,255);
     font-family: 'Ketupat Ramadhan';
-    background-color: #00000000;
+    background-color: rgba(168,49,26,255);
+    border: 0;
+    color: rgba(227,210,145,255);
+    font-size: 30px;
+      border-radius: 25px;
 }
 
-button:hover {
-    background-color: black;
+.sign-up:hover {
+    background-color: rgba(213,171,73,255);
+    color: #fff;
+     transition: 0.45s;
+}
+
+.register {
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.45s;
+    font-family: 'Ketupat Ramadhan';
+    background-color: rgba(227,210,145,255);
+    margin-top: 25px;
+    border: 0;
+    color: rgba(168,49,26,255);
+    font-size: 30px;
+    border-radius: 25px;
+}
+
+.register:hover {
+    background-color: rgba(213,171,73,255);
     color: #fff;
      transition: 0.45s;
 }
@@ -55,10 +78,11 @@ button:hover {
     justify-content: center;
     display: flex;
     align-items: center;
-    background-image: url(https://rare-gallery.com/uploads/posts/567915-pyramid-egypt.jpg);
+    background-image: url(/Images/pexels-arralyn-2402926.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: 50%;
 }
 
 .section-container-1 {
@@ -66,12 +90,14 @@ button:hover {
     width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: rgba(23,60,73,255);
+    background: rgb(233,218,158);
+    background: linear-gradient(180deg, rgba(233,218,158,1) 0%, rgba(217,186,78,1) 0%, rgba(228,208,133,1) 100%);
     justify-content: center;
     align-items: center;
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
+    border-top: rgba(168,49,26,255) 20px solid;
     /* background-image: url(https://previews.123rf.com/images/photoauris/photoauris1506/photoauris150600005/41077307-yellow-brick-wall-texture.jpg); */
 }
 
@@ -87,7 +113,12 @@ button:hover {
     padding-right: 20px;
     padding-top: 50px;
     color: #fff;
-    box-shadow: 15px 15px rgba(213,171,73,255);
+    box-shadow: 0px 15px rgba(213,171,73,255);
+    margin-top: -185px;
+}
+
+h1 {
+     letter-spacing: 5px;
 }
 
 h2 {
@@ -100,7 +131,8 @@ p {
     padding-top: 50px;
     font-size: 20px;
     padding-bottom: 50px;
-    font-family: 'Ketupat Ramadhan';
+    font-weight: bold;
+    font-family: 'Covered By Your Grace', cursive;
 }
 
 /* @font-face {
