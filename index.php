@@ -22,15 +22,15 @@
         <nav class="navbar">
             <div class="content">
                 <div class="logo">
-                    <a href="./index.php"></a><img class="website" id="website" alt="https://media.tenor.com/BTwfZwYmtToAAAAd/yo-cuando-spinning.gif" src="https://media.tenor.com/BTwfZwYmtToAAAAd/yo-cuando-spinning.gif">
+                    <a href="./index.php"><img class="website" id="website" alt="https://media.tenor.com/BTwfZwYmtToAAAAd/yo-cuando-spinning.gif" src="./Images/escaperoom_logo_werkbestand-removebg-preview (2).png"></a>
                 </div>
                 <ul class="menu-list">
                     <div class="icon cancel-btn">
                         <i class="fas fa-times"></i>
                     </div>
                     <li><a href="#section-2" id="locate2">About</a></li>
-                    <li><a href="./register.php">Register</a></li>
-                    <li><a href="../login.php" id="locate3">Sign-in</a></li>
+                 <li><a href="./register.php">Register</a></li>
+                    <li><a href="./login.php">Sign-in</a></li>
                 </ul>
                 <div class="icon menu-btn">
                     <i class="fas fa-bars"></i>

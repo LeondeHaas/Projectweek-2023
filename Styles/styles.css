@@ -191,9 +191,8 @@ h2 {
 }
 
 .website {
-  width: 65px;
+  width: 85px;
   height: auto;
-  border-radius: 50%;
 }
 
 /* width /
@@ -217,6 +216,7 @@ h2 {
 / Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(168, 49, 26, 255);
+  cursor: pointer;
 }
 
 .website.remove {
@@ -240,6 +240,16 @@ background-image: url(https://images.unsplash.com/photo-1584719866406-c76ddee484
 .register-form {
   width: 50%;
   height: auto;
+  background-color: #37546181;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.login-form {
+  width: 50%;
+  height: 69vh;
   background-color: #37546181;
   justify-content: center;
   display: flex;
@@ -289,24 +299,3 @@ label {
    font-weight: bold;
    color: #fff;
 }
-
-/* .sign-up {
-  width: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: 0.45s;
-  font-family: "Ketupat Ramadhan";
-  background-color: rgba(168, 49, 26, 255);
-  border: 0;
-  color: rgba(227, 210, 145, 255);
-  font-size: 30px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.sign-up:hover {
-  background-color: rgba(213, 171, 73, 255);
-  color: rgba(168, 49, 26, 255);
-  transition: 0.45s;
-} */
-
