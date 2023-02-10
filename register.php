@@ -26,23 +26,22 @@
   <body>
     <header class="header">
       <nav class="navbar">
-        <div class="content">
-          <div class="logo">
-            <a href="#">Escape Room Name</a>
-          </div>
-          <ul class="menu-list">
-            <div class="icon cancel-btn">
-              <i class="fas fa-times"></i>
+            <div class="content">
+                <div class="logo">
+                    <a href="./index.php"><img class="website" id="website" src="https://www.seekpng.com/png/full/311-3113352_world-wide-web-logo-png-website-image-without.png" alt=""></a>
+                </div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="./register.php">Register</a></li>
+                    <li><a href="./login.php" id="locate3">Sign-in</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-            <li><a href="index.html#section-1" id="locate-1">Intro</a></li>
-            <li><a href="#section-2" id="locate-2">About</a></li>
-            <li><a href="#section-3" id="locate-3">Register</a></li>
-          </ul>
-          <div class="icon menu-btn">
-            <i class="fas fa-bars"></i>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </header>
     <main>
       <div class="main-container">

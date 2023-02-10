@@ -21,6 +21,6 @@ if (isset($_POST['submit'])) {
     $_SESSION['user'] = true;
     $_SESSION['loggedIn'] = true;
 
-    header("Location: user.php");
+    header("Location: ../index.php");
     exit();
 }

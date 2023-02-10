@@ -49,7 +49,7 @@
 
 .sign-up:hover {
   background-color: rgba(213, 171, 73, 255);
-  color: #fff;
+  color: rgba(168, 49, 26, 255);
   transition: 0.45s;
 }
 
@@ -72,7 +72,7 @@
 
 .register:hover {
   background-color: rgba(213, 171, 73, 255);
-  color: #fff;
+  color: rgba(227, 210, 145, 255);
   transition: 0.45s;
 }
 
@@ -130,7 +130,7 @@ h2 {
   font-family: "Ketupat Ramadhan";
 }
 
-p {
+.info {
   padding-top: 25px;
   font-size: 20px;
   padding-bottom: 50px;
@@ -177,3 +177,31 @@ p {
 
   color: rgba(213, 171, 73, 255);
 }
+
+.copyright {
+  width: 100%;
+  height: 30px;
+  background-color: rgba(23,60,73,255);
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.website {
+  width: 65px;
+  height: auto;
+}
+
+.website.remove {
+  display: none;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+
