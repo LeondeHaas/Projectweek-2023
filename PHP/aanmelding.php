@@ -20,7 +20,7 @@ include_once('../Includes/connect.php');
     <link rel="stylesheet" href="../Styles/footer.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>Aanmeldingen</title>
 </head>
 
 <body>
@@ -46,24 +46,6 @@ include_once('../Includes/connect.php');
         </nav>
     </header>
     <main>
-        <div class="admin-container">
-            <div class="welkom-admin">
-                <h1 class="welkom-gebruiker">Welkom <?php echo $_SESSION['name']; ?></h1>
-                <div class="admin-dashboard">
-
-                    <a class="user-blok" href="allUsers.php">
-                        <div>
-                            <h3>Gebruikers</h3>
-                        </div>
-                    </a>
-                    <a class="aanmelding-escaperoom" href="aanmelding.php">
-                        <div>
-                            <h3>Aanmelding</h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
     </main>
     <footer></footer>
     <script src="../Javascript/main.js"></script>
