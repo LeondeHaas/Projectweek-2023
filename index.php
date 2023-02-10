@@ -22,7 +22,7 @@
         <nav class="navbar">
             <div class="content">
                 <div class="logo">
-                    <img class="website" id="website" src="https://media.tenor.com/R5IECfIf34YAAAAd/fish-spinning.gif" alt="https://media.tenor.com/R5IECfIf34YAAAAd/fish-spinning.gif">
+                    <a href="./index.php"></a><img class="website" id="website" alt="https://media.tenor.com/BTwfZwYmtToAAAAd/yo-cuando-spinning.gif" src="https://media.tenor.com/BTwfZwYmtToAAAAd/yo-cuando-spinning.gif">
                 </div>
                 <ul class="menu-list">
                     <div class="icon cancel-btn">
