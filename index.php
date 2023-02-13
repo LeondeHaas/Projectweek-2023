@@ -84,7 +84,7 @@ ROC Nijmegen - Heyedaalseweg</p>
 </body>
 <footer>
     <div class="copyright">
-        <p>© copyright Leon, Leon, Joran, Naser</p>
+        <p>© de verborgen piramide van Heyendaal</p>
     </div>
 </footer>
 <script src="Javascript/main.js">
