@@ -54,7 +54,7 @@
 }
 
 .register {
-    cursor: pointer;
+  cursor: pointer;
   width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -156,7 +156,7 @@ p {
   width: 10%;
   /* height: 100px; */
   top: 190px;
-  right: 450px;
+  right: 350px;
   bottom: 0;
 
   filter: url(#threshold) blur(0.6px);
