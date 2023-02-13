@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 include_once('../Includes/connect.php');
 
 if (isset($_POST['submit'])) {
@@ -16,7 +19,9 @@ if (isset($_POST['submit'])) {
     $stmt->bindParam(":password", $_POST['password']);
     $stmt->execute();
 
-    session_start();
+    $_SESSION['name'] = $_POST['name'];
+    $_SESSION['profile'] = $_POST['profile'];
+
     $_SESSION['admin'] = false;
     $_SESSION['user'] = true;
     $_SESSION['loggedIn'] = true;

@@ -22,16 +22,15 @@
         <nav class="navbar">
             <div class="content">
                 <div class="logo">
-                    <a href="#"></a>
+                    <a href="./index.php"><img class="website" id="website" alt="https://media.tenor.com/BTwfZwYmtToAAAAd/yo-cuando-spinning.gif" src="./Images/escaperoom_logo_werkbestand-removebg-preview (2).png"></a>
                 </div>
                 <ul class="menu-list">
                     <div class="icon cancel-btn">
                         <i class="fas fa-times"></i>
                     </div>
-                    <li><a href="#section-1" id="locate1">Intro</a></li>
                     <li><a href="#section-2" id="locate2">About</a></li>
-                    <li><a href="#section-3" id="locate3">Register</a></li>
-                    <li><a href="#section-4" id="locate3">Sign-up</a></li>
+                 <li><a href="./register.php">Register</a></li>
+                    <li><a href="./login.php">Sign-in</a></li>
                 </ul>
                 <div class="icon menu-btn">
                     <i class="fas fa-bars"></i>
@@ -46,7 +45,7 @@
     <div class="main-container">
         <div class="text-box">
             <h1>Welkom bij <br> de verborgen piramide van <span class="color">Heyendaal</span></h1>
-            <p>Welkom bij de website van onze escape room!<br> Wij hebben een Egyptische escape room gemaakt, komt u uit de 4 gethematiseerde puzels? kom en probeer hem uit. 
+            <p class="info">Welkom bij de website van onze escape room!<br> Wij hebben een Egyptische escape room gemaakt, komt u uit de 4 gethematiseerde puzels? kom en probeer hem uit. 
 ROC Nijmegen - Heyedaalseweg</p>
             <button class="sign-up">Sign up</button>
             <button class="register">Register</button>
@@ -70,8 +69,8 @@ ROC Nijmegen - Heyedaalseweg</p>
     <div class="section-container-1">
         <div class="section-container-wrapper-1">
             <h2>How about an introduction?</h2>
-           <iframe width="100%" height="515" src="https://www.youtube.com/embed/-obKX-mqjXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p>Toen de rangers na de expeditie in Egypte erachter kwamen dat er een Egyptische Pyramide
+           <iframe id="section-2" width="100%" height="515" src="https://www.youtube.com/embed/-obKX-mqjXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="info">Toen de rangers na de expeditie in Egypte erachter kwamen dat er een Egyptische Pyramide
                  onder de grond bij heyendaal was het vervolg van de baas
                   Ranger Mike Hawk zijn rangers sturen naar de Pyramide waar
                    niemand ooit in is geweest. Ze zijn hier om goud te zoeken 
@@ -81,11 +80,14 @@ ROC Nijmegen - Heyedaalseweg</p>
                      die ervoor zorgt dat de uitgang niet meer te bereiken is 
                      zonder het goud. Zoek samen met alle rangers het goud om lekker zelf te houden natuurlijk maar ook om een instortende pyramide te overleven. Kijk goed om je heen alles kan een hint zijn!</p>
         </div>
-
     </div>
 </body>
 <footer>
+    <div class="copyright">
+        <p>© copyright Leon, Leon, Joran, Naser</p>
+    </div>
 </footer>
-<script src="Javascript/main.js"></script>
+<script src="Javascript/main.js">
+</script>
 
 </html>

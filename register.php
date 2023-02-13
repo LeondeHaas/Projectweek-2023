@@ -25,27 +25,26 @@
 
   <body>
     <header class="header">
-      <nav class="navbar">
-        <div class="content">
-          <div class="logo">
-            <a href="#">Escape Room Name</a>
-          </div>
-          <ul class="menu-list">
-            <div class="icon cancel-btn">
-              <i class="fas fa-times"></i>
+     <nav class="navbar">
+            <div class="content">
+                <div class="logo">
+                     <a href="./index.php"><img class="website" id="website" alt="https://media.tenor.com/BTwfZwYmtToAAAAd/yo-cuando-spinning.gif" src="./Images/escaperoom_logo_werkbestand-removebg-preview (2).png"></a>
+                </div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                  <li><a href="./register.php">Register</a></li>
+                    <li><a href="./login.php">Sign-in</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-            <li><a href="index.html#section-1" id="locate-1">Intro</a></li>
-            <li><a href="#section-2" id="locate-2">About</a></li>
-            <li><a href="#section-3" id="locate-3">Register</a></li>
-          </ul>
-          <div class="icon menu-btn">
-            <i class="fas fa-bars"></i>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </header>
     <main>
-      <div class="main-container">
+      <div class="main-container-form">
         <div class="register-form">
           <form action="PHP/register.php" method="post">
             <label for="name">Naam</label>
@@ -57,7 +56,7 @@
               required
             />
             <label for="email">Email</label>
-            <input
+            <input class="css"
               type="email"
               placeholder="jan1@gmail.com"
               name="email"
@@ -65,7 +64,7 @@
               required
             />
             <label for="birthday">Geboortedatum</label>
-            <input
+            <input class="css"
               type="date"
               name="birthday"
               id="birthday"
@@ -101,7 +100,7 @@
             <label for="profile">Profiel foto</label>
             <input type="file" name="profile" id="profile" />
             <label for="password">Wachtwoord</label>
-            <input type="password" name="password" id="password" required />
+            <input class="css" type="password" name="password" id="password" required />
             <input type="submit" value="submit" name="submit" id="submit" />
           </form>
         </div>

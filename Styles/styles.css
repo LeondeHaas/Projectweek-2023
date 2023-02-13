@@ -49,7 +49,7 @@
 
 .sign-up:hover {
   background-color: rgba(213, 171, 73, 255);
-  color: #fff;
+  color: rgba(168, 49, 26, 255);
   transition: 0.45s;
 }
 
@@ -72,7 +72,7 @@
 
 .register:hover {
   background-color: rgba(213, 171, 73, 255);
-  color: #fff;
+  color: rgba(227, 210, 145, 255);
   transition: 0.45s;
 }
 
@@ -130,7 +130,7 @@ h2 {
   font-family: "Ketupat Ramadhan";
 }
 
-p {
+.info {
   padding-top: 25px;
   font-size: 20px;
   padding-bottom: 50px;
@@ -176,4 +176,187 @@ p {
   user-select: none;
 
   color: rgba(213, 171, 73, 255);
+}
+
+.copyright {
+  width: 100%;
+  height: 30px;
+  background-color: rgba(23, 60, 73, 255);
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.website {
+  width: 85px;
+  height: auto;
+}
+
+/* width /
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/ Track /
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 50px rgba(168, 49, 26, 255); 
+  border-radius: 10px;
+}
+ 
+/ Handle /
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 49, 26, 255);
+  border-radius: 40px;
+
+}
+
+/ Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 49, 26, 255);
+  cursor: pointer;
+}
+
+.website.remove {
+  display: none;
+}
+
+/* register page css */
+
+.main-container-form {
+  width: 100%;
+  height: auto;
+  background-image: url(https://images.unsplash.com/photo-1584719866406-c76ddee48493?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZWd5cHR8ZW58MHx8MHx8&auto=format&fit=crop&w=2000&q=60);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 170px;
+  background-size: cover;
+}
+
+.register-form {
+  width: 50%;
+  height: auto;
+  background-color: #37546181;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.login-form {
+  width: 50%;
+  height: 69vh;
+  background-color: #37546181;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 4px solid rgba(227, 210, 145, 255);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(213, 171, 73, 255);
+}
+
+.css {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 4px solid rgba(227, 210, 145, 255);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(213, 171, 73, 255);
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.45s;
+  font-family: "Ketupat Ramadhan";
+  background-color: rgba(168, 49, 26, 255);
+  border: 0;
+  color: rgba(227, 210, 145, 255);
+  font-size: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+label {
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+/* voor admin */
+
+.admin-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.admin-dashboard {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+}
+
+.user-blok {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: rgba(168, 49, 26, 255);
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+  padding: 60px;
+}
+
+.aanmelding-escaperoom {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: rgba(227, 210, 145, 255);
+  border-radius: 10px;
+  color: #191717;
+  text-decoration: none;
+  margin: 5px;
+  padding: 60px;
+}
+
+/* voor user */
+
+.user-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 150px;
 }
