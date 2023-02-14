@@ -4,7 +4,6 @@ session_start();
 if ($_SESSION['admin'] != true) {
     header("location: ../index.php");
 }
-// include_once('../Includes/session.php');
 include_once('../Includes/connect.php');
 
 ?>

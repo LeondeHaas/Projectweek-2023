@@ -1,7 +1,11 @@
 <?php
 
+session_start();
+if ($_SESSION['admin'] != true) {
+    header("location: ../index.php");
+}
+
 include_once('../Includes/connect.php');
-include_once('../Includes/session.php');
 
 
 $sql = "SELECT * FROM user WHERE admin = 0 ";
@@ -47,37 +51,41 @@ $result = $stmt->fetchAll();
             </div>
         </nav>
     </header>
-    <div class="alluser-container">
-        <p>Alle gebruikers</p>
-        <table class="table-alluser">
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Title</th>
-                <th>Message</th>
-                <th>Update</th>
-                <th>Delete</th>
-            </tr>
-            <?php
+    <main>
+        <div class="alluser-container">
+            <h1>Alle gebruikers</h1>
+            <table class="table-alluser">
+                <tr>
+                    <th>ID</th>
+                    <th>Naam</th>
+                    <th>Email</th>
+                    <th>Geboortedatum</th>
+                    <th>Adres</th>
+                    <th>Straat</th>
+                    <th>Postcode</th>
+                    <th>Aanpassen</th>
+                    <th>Verwijderen</th>
+                </tr>
+                <?php
 
-            foreach ($result as $user) {
+                foreach ($result as $user) {
 
-                echo '<tr>';
-                echo '<td>' . $user['id'] . '</td>';
-                echo '<td>' . $user['name'] . '</td>';
-                echo '<td>' . $user['email'] . '</td>';
-                echo '<td>' . $user['birthday'] . '</td>';
-                echo '<td>' . $user['address'] . '</td>';
-                echo '<td>' . $user['street'] . '</td>';
-                echo '<td>' . $user['zipcode'] . '</td>';
-                echo '<td class="user-update"><a href="php/updateUser.php?id=' . $user['id'] . '">Aanpassen</a></td>';
-                echo '<td class="user-delete"><a href="php/deleteUser.php?id=' . $user['id'] . '">Verwijderen</a></td>';
-                echo '</tr>';
-            }
-            ?>
-        </table>
-    </div>
+                    echo '<tr>';
+                    echo '<td>' . $user['id'] . '</td>';
+                    echo '<td>' . $user['name'] . '</td>';
+                    echo '<td>' . $user['email'] . '</td>';
+                    echo '<td>' . $user['birthday'] . '</td>';
+                    echo '<td>' . $user['address'] . '</td>';
+                    echo '<td>' . $user['street'] . '</td>';
+                    echo '<td>' . $user['zipcode'] . '</td>';
+                    echo '<td class="user-update"><a href="updateUser.php?id=' . $user['id'] . '">Aanpassen</a></td>';
+                    echo '<td class="user-delete"><a href="deleteUser.php?id=' . $user['id'] . '">Verwijderen</a></td>';
+                    echo '</tr>';
+                }
+                ?>
+            </table>
+        </div>
+    </main>
 </body>
 
 </html>

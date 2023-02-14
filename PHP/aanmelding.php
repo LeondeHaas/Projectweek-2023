@@ -4,8 +4,14 @@ session_start();
 if ($_SESSION['admin'] != true) {
     header("location: ../index.php");
 }
-// include_once('../Includes/session.php');
+
 include_once('../Includes/connect.php');
+
+
+$sql = "SELECT * FROM user WHERE admin = 0 AND aanmelden = 1";
+$stmt = $connect->prepare($sql);
+$stmt->execute();
+$result = $stmt->fetchAll();
 
 ?>
 
@@ -46,6 +52,39 @@ include_once('../Includes/connect.php');
         </nav>
     </header>
     <main>
+        <div class="allaanmelden-container">
+            <h1>Alle aangemelde gebruikers</h1>
+            <table class="table-allaanmelden">
+                <tr>
+                    <th>ID</th>
+                    <th>Naam</th>
+                    <th>Email</th>
+                    <th>Geboortedatum</th>
+                    <th>Adres</th>
+                    <th>Straat</th>
+                    <th>Postcode</th>
+                    <th>Aanpassen</th>
+                    <th>Verwijderen</th>
+                </tr>
+                <?php
+
+                foreach ($result as $user) {
+
+                    echo '<tr>';
+                    echo '<td>' . $user['id'] . '</td>';
+                    echo '<td>' . $user['name'] . '</td>';
+                    echo '<td>' . $user['email'] . '</td>';
+                    echo '<td>' . $user['birthday'] . '</td>';
+                    echo '<td>' . $user['address'] . '</td>';
+                    echo '<td>' . $user['street'] . '</td>';
+                    echo '<td>' . $user['zipcode'] . '</td>';
+                    echo '<td class="user-update"><a href="updateUser.php?id=' . $user['id'] . '">Aanpassen</a></td>';
+                    echo '<td class="user-delete"><a href="deleteUser.php?id=' . $user['id'] . '">Verwijderen</a></td>';
+                    echo '</tr>';
+                }
+                ?>
+            </table>
+        </div>
     </main>
     <footer></footer>
     <script src="../Javascript/main.js"></script>

@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
@@ -29,8 +35,18 @@
                         <i class="fas fa-times"></i>
                     </div>
                     <li><a href="#section-2" id="locate2">About</a></li>
-                 <li><a href="./register.php">Register</a></li>
-                    <li><a href="./login.php">Sign-in</a></li>
+
+                    <?php
+                    include_once('./Includes/connect.php');
+                    if (isset($_SESSION['user']) != true) {
+                        echo '<li><a href="./register.php">Register</a></li>';
+                        echo '<li><a href="./login.php">Sign-in</a></li>';
+                    } else {
+                        echo '<li><a href="php/user.php">Profiel</a></li>';
+                        echo '<li><a href="php/logout.php">Logout</a></li>';
+                    }
+                    ?>
+
                 </ul>
                 <div class="icon menu-btn">
                     <i class="fas fa-bars"></i>
@@ -41,21 +57,34 @@
     </html>
 </header>
 <div class="gap"></div>
+
 <body>
     <div class="main-container">
         <div class="text-box">
-            <h1>Welkom bij <br> de verborgen piramide van <span class="color">Heyendaal</span></h1>
-            <p class="info">Welkom bij de website van onze escape room!<br> Wij hebben een Egyptische escape room gemaakt, komt u uit de 4 gethematiseerde puzels? kom en probeer hem uit. 
-ROC Nijmegen - Heyedaalseweg</p>
-            <button class="sign-up">Sign up</button>
-            <button class="register">Register</button>
+            <h1>Welkom <?php include_once('./Includes/connect.php');
+                        if (isset($_SESSION['user']) != true) {
+                            echo 'bij <br> de verborgen piramide van <span class="color">Heyendaal</span></h1>
+            <p class="info">Welkom bij de website van onze escape room!<br> Wij hebben een Egyptische escape room gemaakt, komt u uit de 4 gethematiseerde puzels? kom en probeer hem uit.
+                ROC Nijmegen - Heyedaalseweg</p>';
+                        } else {
+                            echo $_SESSION['name'] . ' bij <br> de verborgen piramide van <span class="color">Heyendaal</span></h1>
+            <p class="info">Welkom bij de website van onze escape room!<br> Wij hebben een Egyptische escape room gemaakt, komt u uit de 4 gethematiseerde puzels? kom en probeer hem uit.
+                ROC Nijmegen - Heyedaalseweg</p>';
+                        } ?>
+                <?php
+                include_once('./Includes/connect.php');
+                if (isset($_SESSION['user']) != true) {
+                    echo '<button class="sign-in"><a href="login.php">Sign in</a></button>';
+                    echo '<button class="register"><a href="register.php">Register</a></button>';
+                }
+                ?>
         </div>
 
- <div id="container">
+        <div id="container">
             <span id="text1"></span>
             <span id="text2"></span>
-        </div>               
-      
+        </div>
+
         <defs>
             <filter id="threshold">
                 <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
@@ -69,25 +98,51 @@ ROC Nijmegen - Heyedaalseweg</p>
     <div class="section-container-1">
         <div class="section-container-wrapper-1">
             <h2>How about an introduction?</h2>
-           <iframe id="section-2" width="100%" height="515" src="https://www.youtube.com/embed/-obKX-mqjXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id="section-2" width="100%" height="515" src="https://www.youtube.com/embed/-obKX-mqjXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p class="info">Toen de rangers na de expeditie in Egypte erachter kwamen dat er een Egyptische Pyramide
-                 onder de grond bij heyendaal was het vervolg van de baas
-                  Ranger Mike Hawk zijn rangers sturen naar de Pyramide waar
-                   niemand ooit in is geweest. Ze zijn hier om goud te zoeken 
-                   en om onderzoek te doen naar de mummie waar iedereen het over
-                    heeft als ze het hebben over de Pyramide. <br><br>Helaas blijkt het
-                    tijdens de uitleg van Mike dat er een booby trap geactiveerd werd
-                     die ervoor zorgt dat de uitgang niet meer te bereiken is 
-                     zonder het goud. Zoek samen met alle rangers het goud om lekker zelf te houden natuurlijk maar ook om een instortende pyramide te overleven. Kijk goed om je heen alles kan een hint zijn!</p>
+                onder de grond bij heyendaal was het vervolg van de baas
+                Ranger Mike Hawk zijn rangers sturen naar de Pyramide waar
+                niemand ooit in is geweest. Ze zijn hier om goud te zoeken
+                en om onderzoek te doen naar de mummie waar iedereen het over
+                heeft als ze het hebben over de Pyramide. <br><br>Helaas blijkt het
+                tijdens de uitleg van Mike dat er een booby trap geactiveerd werd
+                die ervoor zorgt dat de uitgang niet meer te bereiken is
+                zonder het goud. Zoek samen met alle rangers het goud om lekker zelf te houden natuurlijk maar ook om een instortende pyramide te overleven. Kijk goed om je heen alles kan een hint zijn!</p>
         </div>
     </div>
+    <main>
+        <div class="aanmelden-container">
+            <div class="timer" id="timer"></div>
+            <div class="tekst-timer">
+                <h3>Wees niet te laat met het inschrijven voor onze escaperoom, dit is de enige keer dat u voor deze escaperoom kan doen!</h3>
+                <h4>U mag zoveel vrieden, familiegenoten meenemen naar de escaperoom!</h4>
+            </div>
+            <div class="aanmelden-knop">
+                <?php
+                if (isset($_SESSION['user']) == true) {
+                    echo '<form action="PHP/aanmelden.php" method="post">';
+                    echo '<input type="submit" value="Aanmelden" name="aanmelden" id="aanmelden" />';
+                    echo '</form>';
+                } elseif (isset($_SESSION['admin']) == true) {
+                    echo 'Admin kan niet aanmelden voor de escape room';
+                } else {
+                    echo '<div class="moet-inloggen-knop">';
+                    echo '<h2>U moet een account hebben om aan te melden voor de escape room!</h2>';
+                    echo '<button class="sign-in"><a href="login.php">Sign in</a></button>';
+                    echo '<button class="register"><a href="register.php">Register</a></button>';
+                    echo '</div>';
+                }
+                ?>
+            </div>
+        </div>
+    </main>
 </body>
 <footer>
     <div class="copyright">
         <p>© de verborgen piramide van Heyendaal</p>
     </div>
 </footer>
-<script src="Javascript/main.js">
-</script>
+<script src="Javascript/timer.js"></script>
+<script src="Javascript/main.js"></script>
 
 </html>
