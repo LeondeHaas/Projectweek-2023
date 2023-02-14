@@ -33,21 +33,25 @@
   padding-bottom: 150px;
 }
 
-.sign-up {
+.sign-in {
   width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   transition: 0.45s;
   font-family: "Ketupat Ramadhan";
-  background-color: rgba(168, 49, 26, 255);
   border: 0;
-  color: rgba(227, 210, 145, 255);
+  background-color: rgba(168, 49, 26, 255);
   font-size: 30px;
   border-radius: 15px;
   cursor: pointer;
 }
 
-.sign-up:hover {
+.sign-in a {
+  text-decoration: none;
+  color: rgba(227, 210, 145, 255);
+}
+
+.sign-in:hover {
   background-color: rgba(213, 171, 73, 255);
   color: rgba(168, 49, 26, 255);
   transition: 0.45s;
@@ -63,11 +67,15 @@
   background-color: rgba(227, 210, 145, 255);
   margin-top: 25px;
   border: 0;
-  color: rgba(168, 49, 26, 255);
   font-size: 30px;
   border-radius: 15px;
   margin-left: 20px;
   z-index: 1000;
+}
+
+.register a {
+  text-decoration: none;
+  color: rgba(168, 49, 26, 255);
 }
 
 .register:hover {
@@ -347,6 +355,147 @@ label {
   text-decoration: none;
   margin: 5px;
   padding: 60px;
+}
+
+.aanmelden-container {
+  border-top: 20px solid rgba(168, 49, 26, 255);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../Images/pexels-david-mceachan-71241.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+.timer {
+  width: 25%;
+  height: auto;
+  background-color: rgba(168, 49, 26, 255);
+  color: rgba(213, 171, 73, 255);
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+/* voor admin */
+
+.admin-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.admin-dashboard {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+}
+
+.user-blok {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: rgba(168, 49, 26, 255);
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+  padding: 60px;
+}
+
+.aanmelding-escaperoom {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: rgba(227, 210, 145, 255);
+  border-radius: 10px;
+  color: #191717;
+  text-decoration: none;
+  margin: 5px;
+  padding: 60px;
+}
+
+.alluser-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 400px;
+  padding-bottom: 100px;
+}
+
+.alluser-container h1 {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.update-user-container-form {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  background-color: #37546181;
+}
+
+.update-user-container-form .terug-knop {
+  display: flex;
+  justify-content: center;
+}
+
+.terug-knop a {
+  margin-top: 20px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(213, 171, 73, 255);
+  border-radius: 10px;
+  color: rgba(168, 49, 26, 255);
+  text-decoration: none;
+}
+
+.allaanmelden-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 400px;
+  padding-bottom: 100px;
+}
+
+.allaanmelden-container h1 {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 /* voor user */

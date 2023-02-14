@@ -41,13 +41,13 @@ include_once('../Includes/connect.php');
     <nav class="navbar">
       <div class="content">
         <div class="logo">
-          <img class="website" id="website" src="https://media.tenor.com/R5IECfIf34YAAAAd/fish-spinning.gif" alt="https://media.tenor.com/R5IECfIf34YAAAAd/fish-spinning.gif">
+          <img class="website" id="website" src="../Images/escaperoom_logo_werkbestand-removebg-preview (2).png" alt="https://media.tenor.com/R5IECfIf34YAAAAd/fish-spinning.gif">
         </div>
         <ul class="menu-list">
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
           </div>
-          <li><a href="#section-2" id="locate2">About</a></li>
+          <li><a href="../index.php">Home</a></li>
           <li><a href="logout.php">Logout</a></li>
         </ul>
         <div class="icon menu-btn">

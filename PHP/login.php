@@ -31,10 +31,10 @@ if (isset($_POST["submit"])) {
             $_SESSION['name'] = $user["name"];
             $_SESSION['password'] = $user["password"];
             $_SESSION['email'] = $user["email"];
-            header("location: user.php");
+            header("location: ../index.php");
         }
     } else {
-        header("location: ../login.html");
+        header("location: ../login.php");
     }
 }
 
