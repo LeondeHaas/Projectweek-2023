@@ -18,14 +18,21 @@ if (isset($_POST['submit'])) {
     $stmt->bindParam(":profile", $_POST['profile']);
     $stmt->bindParam(":password", $_POST['password']);
     $stmt->execute();
-
-    $_SESSION['name'] = $_POST['name'];
-    $_SESSION['profile'] = $_POST['profile'];
+    $rowcount = $stmt->rowCount();
+    $user = $stmt->fetch();
 
     $_SESSION['admin'] = false;
     $_SESSION['user'] = true;
     $_SESSION['loggedIn'] = true;
+    $_SESSION['id'] = $user["id"];
+    $_SESSION['name'] = $_POST["name"];
+    $_SESSION['email'] = $_POST["email"];
+    $_SESSION['birthday'] = $_POST["birthday"];
+    $_SESSION['address'] = $_POST["address"];
+    $_SESSION['street'] = $_POST["street"];
+    $_SESSION['zipcode'] = $_POST["zipcode"];
+    $_SESSION['password'] = $_POST["password"];
 
-    header("Location: user.php");
+    header("Location: logout.php");
     exit();
 }

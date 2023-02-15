@@ -7,12 +7,12 @@ if ($_SESSION['user'] != true) {
 
 include_once('../Includes/connect.php');
 
-// $user_id = $_SESSION['id'];
-
-// $sql = "SELECT * FROM user WHERE id = :user_id";
-// $stmt = $connect->prepare($sql);
-// $stmt->execute(['id' => $user_id]);
-// $user = $stmt->fetch();
+$id = $_SESSION['id'];
+$sql = "SELECT * FROM user WHERE id = :id";
+$stmt = $connect->prepare($sql);
+$stmt->bindParam(':id', $id);
+$stmt->execute();
+$result = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -58,8 +58,26 @@ include_once('../Includes/connect.php');
   </header>
   <main>
     <div class="user-container">
+      <h1 class="welkom-gebruiker">Welkom <?php echo $_SESSION['name']; ?></h1>
       <div class="info-gebruiker">
-        <h1 class="welkom-gebruiker">Welkom <?php echo $_SESSION['name']; ?></h1>
+        <h2>Gebruikersinformatie</h2>
+        <div class="user-box">
+          <p><strong>Naam:</strong> <span id="user-name"><?php echo $_SESSION['name']; ?></span></p>
+          <p><strong>Email:</strong> <span id="user-email"><?php echo $_SESSION['email']; ?></span></p>
+          <p><strong>Geboortedatum:</strong> <span id="user-birthday"><?php echo $_SESSION['birthday']; ?></span></p>
+          <p><strong>Adres:</strong> <span id="user-aanmelden"><?php echo $_SESSION['address']; ?></span></p>
+          <p><strong>Straat:</strong> <span id="user-street"><?php echo $_SESSION['street']; ?></span></p>
+          <p><strong>Postcode:</strong> <span id="user-zipcode"><?php echo $_SESSION['zipcode']; ?></span></p>
+          <p><strong>Wachtwoord:</strong> <span id="user-password"><?php echo $_SESSION['password']; ?></span></p>
+          <?php
+          if ($result['aanmelden'] == 1) {
+            echo '<h1>U heeft zich aangemeldt voor de escape room!</h1>';
+          } else {
+            echo '<li><a href="../index.php#section-3">Aanmelden voor de escape room</a></li>';
+          }
+          ?>
+        </div>
+
       </div>
     </div>
   </main>

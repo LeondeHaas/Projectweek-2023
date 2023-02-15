@@ -84,6 +84,33 @@
   transition: 0.45s;
 }
 
+.register2 {
+  cursor: pointer;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.45s;
+  font-family: "Ketupat Ramadhan";
+  background-color: rgba(168, 49, 26, 255);
+  margin-top: 25px;
+  border: 0;
+  font-size: 30px;
+  border-radius: 15px;
+  margin-left: 20px;
+  z-index: 1000;
+}
+
+.register2 a {
+  text-decoration: none;
+  color: rgba(23, 60, 73, 255);
+}
+
+.register2:hover {
+  background-color: rgba(227, 210, 145, 255);
+  color: rgba(168, 49, 26, 255);
+  transition: 0.45s;
+}
+
 .main-container {
   width: 100%;
   height: auto;
@@ -257,7 +284,7 @@ h2 {
 
 .login-form {
   width: 50%;
-  height: 69vh;
+  height: 71vh;
   background-color: #37546181;
   justify-content: center;
   display: flex;
@@ -372,6 +399,28 @@ label {
   background-position: bottom;
 }
 
+.aanmelden-knop {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(227, 210, 145, 255);
+}
+
+.moet-inloggen-knop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.knoppen {
+  flex-direction: row;
+}
+
 .timer {
   width: 25%;
   height: auto;
@@ -381,6 +430,19 @@ label {
   padding: 15px;
   text-align: center;
   border-radius: 25px;
+}
+
+.tekst-timer {
+  width: auto;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 14px;
+  border-radius: 20px;
+  background-color: #fff;
 }
 
 /* voor admin */
@@ -504,8 +566,23 @@ label {
   width: 100%;
   height: 100vh;
   display: flex;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 100px;
-  padding-bottom: 150px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welkom-gebruiker {
+  width: 25%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.info-gebruiker {
+  background-color: rgba(168, 49, 26, 255);
+  padding: 16px;
+  border-radius: 20px;
+  color: rgba(213, 171, 73, 255);
+  font-weight: 800;
 }
