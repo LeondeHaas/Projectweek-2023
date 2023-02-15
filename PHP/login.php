@@ -18,8 +18,14 @@ if (isset($_POST["submit"])) {
             $_SESSION['user'] = false;
             $_SESSION['loggedIn'] = true;
             $_SESSION['name'] = $user["name"];
-            $_SESSION['password'] = $user["password"];
             $_SESSION['email'] = $user["email"];
+            $_SESSION['birthday'] = $user["birthday"];
+            $_SESSION['address'] = $user["address"];
+            $_SESSION['street'] = $user["street"];
+            $_SESSION['zipcode'] = $user["zipcode"];
+            $_SESSION['password'] = $user["password"];
+
+
             header("location: admin.php");
         } else {
             password_verify($_POST["password"], $user["password"]);
@@ -29,8 +35,12 @@ if (isset($_POST["submit"])) {
             $_SESSION['user'] = true;
             $_SESSION['loggedIn'] = true;
             $_SESSION['name'] = $user["name"];
-            $_SESSION['password'] = $user["password"];
             $_SESSION['email'] = $user["email"];
+            $_SESSION['birthday'] = $user["birthday"];
+            $_SESSION['address'] = $user["address"];
+            $_SESSION['street'] = $user["street"];
+            $_SESSION['zipcode'] = $user["zipcode"];
+            $_SESSION['password'] = $user["password"];
             header("location: ../index.php");
         }
     } else {
